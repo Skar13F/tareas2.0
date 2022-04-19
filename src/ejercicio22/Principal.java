@@ -1,3 +1,10 @@
+/* Autor: Oscar Fuentes Alvarado
+ * Fecha de creación: 18 de abril de 2022
+ * Fecha de actualización: 19 de abril de 2022
+ * Descripción: Solicita un día de la semana al usuario, además de
+ * 				la hora (hora y minutos) e imprime la cantidad de minutos faltantes
+ * 				para que termine la semana
+ */
 package ejercicio22;
 
 import java.util.Scanner;

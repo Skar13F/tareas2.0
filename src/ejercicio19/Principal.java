@@ -1,3 +1,9 @@
+/* Autor: Oscar Fuentes Alvarado
+ * Fecha de creación: 18 de abril de 2022
+ * Fecha de actualización: 19 de abril de 2022
+ * Descripción: Lee un número de teclado y devuelve la cantidad (cifras)
+ * 				o tamaño del número
+ */
 package ejercicio19;
 
 import java.util.Scanner;

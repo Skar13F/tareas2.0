@@ -1,11 +1,20 @@
+/* Autor: Oscar Fuentes Alvarado
+ * Fecha de creación: 18 de abril de 2022
+ * Fecha de actualización: 18 de abril de 2022
+ * Descripción: Lee tres números de teclado y los ordena de menor a mayor.
+ * 				Imprime los datos
+ */
 package ejercicio13;
+
 import java.util.Scanner;
+
 public class Principal {
 	private static Scanner s;
 	private static Orden ord;
+
 	public static void main(String[] args) {
-		s=new Scanner(System.in);
-		ord=new Orden();
+		s = new Scanner(System.in);
+		ord = new Orden();
 		int aux;
 		System.out.println("Este programa ordena tres números introducidos por teclado.");
 		System.out.println("Por favor, vaya introduciendo los tres números y pulsando INTRO:");
@@ -32,7 +41,8 @@ public class Principal {
 			ord.setB(aux);
 		}
 
-		System.out.println("Los números introducidos ordenados de menor a mayor son " + ord.getA() + ", " + ord.getB() + " y " + ord.getC() + ".");
+		System.out.println("Los números introducidos ordenados de menor a mayor son " + ord.getA() + ", " + ord.getB()
+				+ " y " + ord.getC() + ".");
 	}
 
 }

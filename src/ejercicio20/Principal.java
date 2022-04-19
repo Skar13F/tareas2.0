@@ -1,3 +1,10 @@
+/* Autor: Oscar Fuentes Alvarado
+ * Fecha de creación: 18 de abril de 2022
+ * Fecha de actualización: 19 de abril de 2022
+ * Descripción: Lee un número del teclado y verifica si puede leerse al revés sin alterar
+ * 				su valor, de ser así manda un mensaje en pantalla que indica que se cumple
+ * 				la característica
+ */
 package ejercicio20;
 
 import java.util.Scanner;
@@ -7,10 +14,10 @@ public class Principal {
 	private static Capicua cp;
 
 	public static void main(String[] args) {
-		s=new Scanner(System.in);
-		cp=new Capicua();
+		s = new Scanner(System.in);
+		cp = new Capicua();
 
-		//cp.setCap(false);
+		// cp.setCap(false);
 
 		System.out.print("Por favor, introduzca un número entero (de 5 cifras como máximo): ");
 		cp.setNum(s.nextInt());
@@ -36,14 +43,16 @@ public class Principal {
 
 		// número de cuatro cifras
 		else if ((cp.getNum() >= 1000) && (cp.getNum() < 10000)) {
-			if (((cp.getNum() / 1000) == (cp.getNum() % 10)) && (((cp.getNum() / 100) % 10) == ((cp.getNum() / 10) % 10))) {
+			if (((cp.getNum() / 1000) == (cp.getNum() % 10))
+					&& (((cp.getNum() / 100) % 10) == ((cp.getNum() / 10) % 10))) {
 				cp.setCap(true);
 			}
 		}
 
 		// número de cinco cifras
 		else if (cp.getNum() >= 10000) {
-			if (((cp.getNum() / 10000) == (cp.getNum() % 10)) && ((((cp.getNum() / 1000) % 10)) == ((cp.getNum() / 10) % 10))) {
+			if (((cp.getNum() / 10000) == (cp.getNum() % 10))
+					&& ((((cp.getNum() / 1000) % 10)) == ((cp.getNum() / 10) % 10))) {
 				cp.setCap(true);
 			}
 		}
